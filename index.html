@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+
+<!-- 手机端自适应核心 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>作品展示</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f1115;
+    color:white;
+    font-family:
+    "PingFang SC",
+    "Microsoft YaHei",
+    sans-serif;
+
+    line-height:1.7;
+}
+
+/* 顶部封面 */
+
+.hero{
+    width:100%;
+    height:60vh;
+
+    background-image:
+    url("https://picsum.photos/1200/800");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.7)
+    );
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    opacity:0.85;
+}
+
+/* 内容区域 */
+
+.container{
+    width:100%;
+    max-width:1100px;
+
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* 卡片 */
+
+.card{
+    background:#181b22;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-bottom:30px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card img{
+    width:100%;
+    display:block;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cfcfcf;
+}
+
+/* 联系方式 */
+
+.contact{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.contact a{
+    color:#66aaff;
+    text-decoration:none;
+}
+
+/* 手机端优化 */
+
+@media (max-width:768px){
+
+    .hero{
+        height:45vh;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .container{
+        padding:20px 15px;
+    }
+
+    .card-content{
+        padding:18px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 顶部 -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>未来武器设计</h1>
+
+        <p>
+            PBR 次时代概念设计展示
+        </p>
+
+    </div>
+
+</section>
+
+<!-- 内容 -->
+
+<div class="container">
+
+    <!-- 作品1 -->
+
+    <div class="card">
+
+        <img src="https://picsum.photos/900/500?1">
+
+        <div class="card-content">
+
+            <h2>重型能量步枪</h2>
+
+            <p>
+                结合工业结构与未来能源核心，
+                适用于硬表面PBR建模。
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- 作品2 -->
+
+    <div class="card">
+
+        <img src="https://picsum.photos/900/500?2">
+
+        <div class="card-content">
+
+            <h2>机械侦察无人机</h2>
+
+            <p>
+                轻量模块化结构，
+                适合作为游戏载具设计参考。
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- 联系方式 -->
+
+<section class="contact">
+
+    <h2>联系我</h2>
+
+    <br>
+
+    <p>
+        邮箱：
+        <a href="#">
+            your@email.com
+        </a>
+    </p>
+
+</section>
+
+</body>
+</html>
