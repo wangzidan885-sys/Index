@@ -1,0 +1,326 @@
+/* ==========================
+   About Page Style
+   Wang Xingqi Portfolio
+========================== */
+
+
+
+/* ==========================
+   个人介绍区域
+========================== */
+
+
+.about {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 80px 0 50px;
+
+}
+
+
+
+.about-container {
+
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+
+}
+
+
+
+
+
+/* ==========================
+   头像
+========================== */
+
+
+.avatar {
+
+
+    flex: 0 0 160px;
+
+
+}
+
+
+
+.avatar img {
+
+
+    width: 160px;
+
+    height: 160px;
+
+
+    object-fit: cover;
+
+
+    border-radius: 50%;
+
+
+    border: 3px solid #2a2e38;
+
+
+}
+
+
+
+
+
+/* ==========================
+   文字介绍
+========================== */
+
+
+.about-text {
+
+
+    flex:1;
+
+
+}
+
+
+
+.about-text h1 {
+
+
+    font-size:38px;
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+.about-text h2 {
+
+
+    color:#59a8ff;
+
+    font-size:18px;
+
+    font-weight:normal;
+
+    margin-bottom:24px;
+
+
+}
+
+
+
+.about-text p {
+
+
+    color:#b8b8b8;
+
+    line-height:1.9;
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+.about-text .intro {
+
+
+    color:white;
+
+    font-size:16px;
+
+
+}
+
+
+
+
+
+/* ==========================
+   教育经历
+========================== */
+
+
+.education {
+
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:35px 0;
+
+
+}
+
+
+
+.education h2,
+
+.contact h2 {
+
+    font-size:24px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.timeline {
+
+
+    background:#181b22;
+
+    padding:22px;
+
+    border-left:3px solid #59a8ff;
+
+    border-radius:8px;
+
+
+}
+
+
+
+.timeline h3 {
+
+    font-size:20px;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.timeline p {
+
+    color:#aaa;
+
+    margin:4px 0;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* ==========================
+   联系方式
+========================== */
+
+
+.contact {
+
+
+    width:90%;
+
+    max-width:1000px;
+
+
+    margin:auto;
+
+
+    padding:35px 0 80px;
+
+
+}
+
+
+
+.contact p {
+
+    color:#bbb;
+
+    margin:8px 0;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* ==========================
+   手机适配
+========================== */
+
+
+@media(max-width:768px){
+
+
+
+.about-container{
+
+
+    flex-direction:column;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.avatar{
+
+
+    flex:auto;
+
+
+}
+
+
+
+.avatar img{
+
+
+    width:120px;
+
+    height:120px;
+
+
+}
+
+
+
+.about-text h1{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+.skill-list{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+}
