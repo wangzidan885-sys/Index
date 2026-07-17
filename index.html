@@ -1,49 +1,251 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的展示页</title>
 
-    <style>
-        body{
-            font-family: Arial;
-            background:#f5f5f5;
-            text-align:center;
-            padding:50px;
-        }
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-        .card{
-            background:white;
-            max-width:600px;
-            margin:auto;
-            padding:30px;
-            border-radius:20px;
-            box-shadow:0 10px 30px rgba(0,0,0,0.1);
-        }
+    <title>王星淇 | Portfolio</title>
 
-        img{
-            width:100%;
-            border-radius:12px;
-        }
+    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/about.css">
 
-        h1{
-            margin-top:20px;
-        }
-    </style>
 </head>
+
 <body>
 
-    <div class="card">
-        <img src="https://picsum.photos/600/300">
+    <!-- 顶部导航 -->
 
-        <h1>我的作品展示</h1>
+    <header>
+
+        <div class="logo">
+
+            王星淇
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">Portfolio</a>
+
+            <a href="about.html">About Me</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Profile Header -->
+
+    <section class="profile-header">
+
+        <div class="profile-content">
+
+            <div class="profile-avatar" id="avatar-container">
+                <div class="avatar-frame">
+                    <img src="icons/headportrait.webp" alt="Avatar" class="avatar" id="avatar-image">
+                </div>
+                <div class="avatar-hint">双击编辑</div>
+            </div>
+
+            <div class="profile-info">
+
+                <h1>Beamy Gnat</h1>
+
+                <h2>3D Character Artist</h2>
+
+                <p>次时代角色 · 风格化角色 · 蒸汽朋克设计</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 作品 -->
+
+    <main class="gallery">
+
+        <!-- 第一张 -->
+	<a href="works/scene01.html" class="card" data-category="modeling">
+            <img src="assets\image\scene01\cover.gif" alt="炮塔">
+            <div class="card-overlay">
+                <div class="overlay-icon">+</div>
+                <div class="overlay-info">
+                    <h4>炮塔</h4>
+                    <span>Stylized Aechitecture</span>
+                </div>
+            </div>
+            <div class="info">
+                <h3>炮塔</h3>
+                <p>Stylized Aechitecture</p>
+            </div>
+        </a>
+
+
+
+
+      
+
+
+
+	<!-- 第二张 -->
+
+	  <a href="works/prop01.html" class="card" data-category="modeling">
+            <img src="assets\image\prop01\cover.gif" alt="机箱">
+            <div class="card-overlay">
+                <div class="overlay-icon">+</div>
+                <div class="overlay-info">
+                    <h4>机械箱</h4>
+                    <span>Mechanical Prop</span>
+                </div>
+            </div>
+            <div class="info">
+                <h3>机械箱</h3>
+                <p>Mechanical Prop</p>
+            </div>
+        </a>
+
+
+
+
+
+
+	<!-- 第三张 -->
+
+		<a href="works/prop02.html" class="card" data-category="modeling">
+            <img src="assets\image\prop02\cover.gif" alt="战斧">
+            <div class="card-overlay">
+                <div class="overlay-icon">+</div>
+                <div class="overlay-info">
+                    <h4>战斧</h4>
+                    <span>Stylized Weapon</span>
+                </div>
+            </div>
+            <div class="info">
+                <h3>战斧</h3>
+                <p>Stylized Weapon</p>
+            </div>
+        </a>
+
+
+
+	<!-- 第四张 -->
+
+	<a href="works/scene02.html" class="card" data-category="modeling">
+            <img src="assets\image\scene02\cover.gif" alt="炮台">
+            <div class="card-overlay">
+                <div class="overlay-icon">+</div>
+                <div class="overlay-info">
+                    <h4>炮台</h4>
+                    <span>Weapon</span>
+                </div>
+            </div>
+            <div class="info">
+                <h3>炮台</h3>
+                <p>Weapon</p>
+            </div>
+        </a>
+
+
+
+        <!-- 新作品复制下面这一块即可 -->
+
+        <!--
+
+        <a href="works/demo.html" class="card" data-category="modeling">
+            <img src="assets\image\demo\cover.gif" alt="作品名称">
+            <div class="card-overlay">
+                <div class="overlay-icon">+</div>
+                <div class="overlay-info">
+                    <h4>新作品名称</h4>
+                    <span>分类名称</span>
+                </div>
+            </div>
+            <div class="info">
+                <h3>新作品名称</h3>
+                <p>分类名称</p>
+            </div>
+        </a>
+
+        -->
+
+    </main>
+
+
+    <!-- 底部 -->
+
+    <footer>
 
         <p>
-            这里可以放你的游戏武器设计、
-            PBR作品、个人介绍等等。
+
+            © 2026 Wang Xingqi Portfolio
+
         </p>
+
+    </footer>
+
+    <div class="avatar-editor-modal" id="avatar-editor-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>编辑头像</h3>
+                <button class="close-btn" id="close-editor">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="editor-preview">
+                    <div class="preview-frame">
+                        <img src="icons/headportrait.webp" class="preview-image" id="preview-image">
+                    </div>
+                </div>
+                <div class="editor-controls">
+                    <div class="control-group">
+                        <label>水平位置</label>
+                        <input type="range" id="crop-x" min="0" max="100" value="50">
+                    </div>
+                    <div class="control-group">
+                        <label>垂直位置</label>
+                        <input type="range" id="crop-y" min="0" max="100" value="15">
+                    </div>
+                    <div class="control-group">
+                        <label>缩放</label>
+                        <input type="range" id="scale" min="1" max="3" step="0.1" value="1">
+                    </div>
+                    <div class="control-group">
+                        <label>旋转</label>
+                        <input type="range" id="rotate" min="-180" max="180" value="0">
+                    </div>
+                    <div class="control-row">
+                        <button id="flip-h">水平翻转</button>
+                        <button id="flip-v">垂直翻转</button>
+                    </div>
+                    <div class="control-row">
+                        <button id="reset-avatar">重置</button>
+                        <button id="apply-avatar">应用</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <div class="confirm-modal" id="confirm-modal">
+        <div class="modal-overlay" id="confirm-overlay"></div>
+        <div class="confirm-content">
+            <h3>确认应用更改？</h3>
+            <p>更改将被保存并在下次打开网页时保留。</p>
+            <div class="confirm-buttons">
+                <button id="confirm-no">取消</button>
+                <button id="confirm-yes">确认</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
